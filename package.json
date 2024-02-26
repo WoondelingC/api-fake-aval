@@ -4,7 +4,7 @@
   "description": "api-fake",
   "main": "index.js",
   "scripts": {
-    "server": "json-server --watch datos.json --port 4000"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
