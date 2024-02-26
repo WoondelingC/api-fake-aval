@@ -4,7 +4,7 @@
   "description": "api-fake",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --port $PORT datos.json"
+    "start": "node api/server.js"
   },
   "author": "",
   "license": "ISC",

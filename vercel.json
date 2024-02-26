@@ -1,8 +1,14 @@
 {
-  "version": 2,
-  "builds": [{ "src": "index.js", "use": "@vercel/node" }],
-  "routes": [{ "src": "/.*", "dest": "/index.js" }],
-  "env": {
-    "NODE_ENV": "production"
-  }
+  "functions": {
+    "api/server.js": {
+      "memory": 1024,
+      "includeFiles": "datos.json"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "api/server.js"
+    }
+  ]
 }
