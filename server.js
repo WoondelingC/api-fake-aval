@@ -12,3 +12,8 @@ server.use(router);
 server.listen(PORT, () => {
   console.log(`JSON Server is running on port ${PORT}`);
 });
+
+process.on("uncaughtException", (error) => {
+  console.error("Uncaught Exception:", error);
+  process.exit(1); // Forzar la terminación del proceso
+});
