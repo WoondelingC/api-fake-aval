@@ -4,12 +4,11 @@
   "description": "api-fake",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "server": "json-server --watch datos.json --port 4000"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cors": "^2.8.5",
     "json-server": "^1.0.0-alpha.23"
   }
 }
