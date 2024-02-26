@@ -4,11 +4,13 @@
   "description": "api-fake",
   "main": "index.js",
   "scripts": {
-    "start": "node api/server.js"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "json-server": "^1.0.0-alpha.23"
+    "cors": "^2.8.5",
+    "json-serve": "^0.1.0",
+    "json-server": "^0.17.3"
   }
 }
